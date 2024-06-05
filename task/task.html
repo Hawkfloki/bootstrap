@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .form {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        border: 2px solid white;
+        background-image: linear-gradient();
+        margin-top: 100px;
+        height: 500px;
+       }
+       .form form label{
+        float:left;
+        font-size: 20px;
+       }
+       .form form input{
+        float:right
+       }
+       .form button{
+        margin-top: 10px;
+        background-color: white;
+        color: black;
+        height: 50px;
+        border: 1px solid blue;
+        box-shadow: 2px 5px 2px lightgreen;
+        
+       }
+       .hidden{
+        display: none;
+       }
+       .container {
+        align-items: center;
+       }
+    </style>
+</head>
+
+<body>
+
+  
+<div class="form container">
+    <form >
+        <div class="row">
+            <label>First Name</label>
+            <input id="fname" type="text" name="fname"  placeholder="First Name">
+            <span class="hidden">enter name</span>
+            <br>
+        </div>
+        <div class="row">
+            <label >Password</label>
+            <input type="password" id="password" name="password" placeholder="password"><br>
+
+        </div>
+        <div class="row">
+            <label > Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="name"><br>
+        </div>
+        <div class="row">
+            <label >Email Addres</label>
+            <input type="email" id="email" name="email" placeholder="email"><br>
+        </div>
+        <div class="row">
+            <label >Contact</label>
+            <input type="number" id="contact" name="contact" placeholder="contact"><br>
+
+        </div>
+        <div class="row">
+            <button id="formsubmit" type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+</body>
+<script src="task.js"></script>
+
+</html>

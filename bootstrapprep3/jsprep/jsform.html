@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsform.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        td img {
+            width: 20%;
+            height: 20%;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container head">
+        <form class="row g-3 mt-3 mb-3">
+            <div class="col-md-6 mt-3 mb-3">
+                <label for="name" class="form-label">First Name</label>
+                <input type="email" class="form-control" id="name">
+            </div>
+            <div class="col-md-6 mt-3 mb-3">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="phone" class="form-control" id="phone">
+            </div>
+    </div>
+    <div class="container base">
+        <form class="row g-3 mt-3 mb-3">
+            <div class="col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="col-12 mt-3 mb-3">
+                <button type="button" onclick="getdata()" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </div>
+    <p id="show"></p>
+
+    <div class="number">
+        <input type="number" id="number1"> <br>
+        <input type="number" id="number2"><br>
+        <button type="button" onclick="number()">greater number is</button>
+        <button type="button" onclick="add()">sum is</button>
+
+    </div>
+
+    <p id="number3"></p>
+    <p id="addition"></p>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">subject</th>
+                <th scope="col">marks</th>
+                <th scope="col">marks</th>
+                <th scope="col">total</th>
+                <th scope="col">Percentage</th>
+                <th scope="col">Photowa</th>
+                <th scope="col">Division</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Chemistry</th>
+                <td> <input type="number" id="n1"></td>
+                <td><input type="number" id="n2"></td>
+                <td>
+                    <p id="showsum"></p>
+                </td>
+                <td>
+                    <p id="show%"></p>
+                </td>
+                <td><img src="../contentimg2.png" alt=""></td>
+                <td> <p id="division1"></p></td>
+            </tr>
+            <tr>
+                <th scope="row">math</th>
+                <td> <input type="number" id="n3"></td>
+                <td><input type="number" id="n4"></td>
+                <td>
+                    <p id="showsum2"></p>
+                </td>
+                <td>
+                    <p id="show%2"></p>
+                </td>
+                
+                <td><img src="../contentimg2.png" alt=""></td>
+                <td> <p id="division2"></p></td>
+            </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+    <button type="button" onclick="sum()">TOTAL</button>
+    <button type="button" onclick="percentage()"> Percentage</button>
+    <button type="button" onclick="divi()">Division</button>
+
+
+
+</body>
+<script src="./js.js"></script>
+
+</html>

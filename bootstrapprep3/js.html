@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+#drop{display: none;}
+
+    </style>
+</head>
+<body>
+    <div class="menu1">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <p id="demo"> win 3cr daily from dream11</p>
+            <button type="button" onclick="getElementById('demo').innerHTML='scam'">
+MAGIC
+            </button>
+            <p id="demo2"> win 3cr daily from dream11</p>
+            <button type="button" onclick="getElementById('demo2').style='color:blue'">MAGIC</button>
+                           
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li > <button type="button" onclick="getElementById('drop').style='display:block'">SERVICES</button>
+            <ul id="drop">
+                <li >1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul></li>
+           
+
+            <li>PRODUCT</li>
+        </ul>
+    </div>
+    <p id="logic"></p>
+    <input id="1" type="text" placeholder="a">
+    <input id="2" type="text" placeholder="b">
+    <button  type="button">ADD   </button>
+    <input id="3" type="text" placeholder="c">
+
+</body>
+<script>
+    let a,b,c;
+    a=5;
+    b=6;
+    c=a+b;
+    document.getElementById("logic").innerHTML=a;
+
+
+   
+</script>
+
+</html>

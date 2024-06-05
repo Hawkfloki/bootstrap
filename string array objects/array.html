@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #form {
+            width: 40%;
+            display: none;
+
+        }
+
+        #name {
+            width: 40%;
+            height: 48px;
+        }
+
+        #mail {
+            width: 40%;
+            height: 48px;
+
+        }
+
+        #Address {
+            width: 40%;
+            height: 48px;
+
+
+        }
+        .vertical-menu{
+            overflow: hidden;
+        }
+
+        .vertical-menu a {
+            background-color: #eee;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+            width: 10%;
+            height: 100px;
+           
+        }
+
+        .vertical-menu a:hover {
+            background-color: #ccc;
+        }
+
+        .vertical-menu a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .studentform form {
+   text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <input type="number" id="table" />
+    <button type="button" onclick="table2()">lul</button>
+    <div id="show"></div>
+
+    <button type="button" onclick="popup()">Click Here</button>
+    <form id="form">
+        <input type="text" id="name" placeholder="First Name">
+        <input type="text" id="name" placeholder="Last Name"><br>
+        <input type="text" id="mail" placeholder="Email"><br>
+        <input type="text" id="Address" placeholder="Address">
+        <button type="button" onclick="hide()">x</button>
+    </form>
+
+
+    <p id="show"></p>
+    <div class="navbar">
+        <button type="button" onclick="nav()">Navbar</button>
+    </div>
+    <div id="nav" class="nav">
+        <div class="vertical-menu">
+            <button type="button" onclick="menu()">Close</button>
+            <a href="#" class="active">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Link 4</a>
+        </div>
+    </div>
+
+    <div id="todo list">
+        <h1> <marquee direction="right" onmouseover="this.stop()" onmouseout="this.start()">TODO LIST</marquee></h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a task">
+            <button type="submit" id="add task">Add Task</button>
+            <button type="button" onclick="clear()">Clear</button>
+        </form>
+        <ul id="todo-result">
+           
+        </ul>
+    </div>
+    <div class="taskbar">
+        <button type="button" onclick="showtask()">Task</button>
+        <div class="otaskbar">
+            <input type="text" placeholder="write task" id="inp">
+            <button type="button" onclick="addtask()">Add TAsk</button>
+
+        </div>
+        <div class="container" id="text"></div>
+    </div>
+    <div class="studentform">
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" placeholder="Name"><br>
+            <label for="Email">Email</label><br>
+            <input type="email"  placeholder="Email"><br>
+            <label for="contact">Contact</label><br>
+            <input type="number" placeholder="Number"><br>
+           <button type="button" onclick="valid()">Submit</button>
+        </form>
+    </div>
+    <p id="result"></p>
+
+
+
+
+
+</body>
+
+<script src="array.js"></script>
+
+</html>
